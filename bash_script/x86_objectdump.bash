@@ -28,7 +28,7 @@ else
 	if [ $bitcode -eq 32 ]; then
 		para='-D -Mintel,i386 -b binary -m i386'
 	else
-		para='-D -Mintel,x86_64 -b binary -m i386'
+		para='-D -Mintel,x86-64 -b binary -m i386'
 	fi
 fi
 echo "objdump $para $filename"
